@@ -1,5 +1,7 @@
 const svgToDataUri = require("mini-svg-data-uri");
-const { default: flattenColorPalette } = require("tailwindcss/lib/util/flattenColorPalette");
+const {
+  default: flattenColorPalette,
+} = require("tailwindcss/lib/util/flattenColorPalette");
 
 module.exports = {
   content: [
@@ -14,7 +16,8 @@ module.exports = {
       animation: {
         shimmer: "shimmer 2s linear infinite",
         spotlight: "spotlight 2s ease .75s 1 forwards", // Added spotlight animation
-        scroll: "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+        scroll:
+          "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
       },
       keyframes: {
         shimmer: {
@@ -41,6 +44,9 @@ module.exports = {
             transform: "translate(-50%,-40%) scale(1)",
           },
         },
+      },
+      boxShadow: {
+        input: `0px 2px 3px -1px rgba(0,0,0,0.1), 0px 1px 0px 0px rgba(25,28,33,0.02), 0px 0px 0px 1px rgba(25,28,33,0.08)`,
       },
       // other theme configurations
     },
