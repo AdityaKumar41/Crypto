@@ -9,13 +9,12 @@ const DarkModeContext = createContext({
 
 export const DarkModeProvider = ({ children }) => {
   const [darkMode, setDarkMode] = useState(() => {
-    // Retrieve initial dark mode preference from localStorage (if available)
     const storedValue = localStorage.getItem(DARK_MODE_KEY);
-    return storedValue === null ? true : JSON.parse(storedValue); // Default to true if not set
+    return storedValue === null ? true : JSON.parse(storedValue);
   });
 
   useEffect(() => {
-    // Update localStorage whenever darkMode state changes
+    // Update localStorage
     localStorage.setItem(DARK_MODE_KEY, JSON.stringify(darkMode));
   }, [darkMode]);
 
