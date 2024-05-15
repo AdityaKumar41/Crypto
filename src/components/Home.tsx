@@ -1,15 +1,16 @@
 import React from "react";
 import { GridBackgroundDemo } from "./GridBackgroundDemo";
 import "./Home.css";
-// import styles from ""
-import { TextGenerateEffectStyle } from "./TextEffect/TextGenerateEffect";
-import ButtonsMore from "./buttons/Buttons2";
+// import { TextGenerateEffectStyle } from "./TextEffect/TextGenerateEffect";
+// import ButtonsMore from "./buttons/Buttons2";
 import { TypewriterEffect } from "./TextEffect/TypewriterEffect";
 import { BentoGridSecondDemo } from "./BentoGrid/BentoGrid";
-import { GlowingStarsBackgroundCardPreview } from "./Glowcard/GlowingStarsBackgroundCardPreview";
-import { SpotlightPreview } from "./Spotlight/SpotlightPreview";
+// import { GlowingStarsBackgroundCardPreview } from "./Glowcard/GlowingStarsBackgroundCardPreview";
+// import { SpotlightPreview } from "./Spotlight/SpotlightPreview";
 import { TracingBeamDemo } from "./TracingBeam/TracingBeam";
-import { SparklesPreview } from "./TextEffect/SparklesPreview";
+// import { SparklesPreview } from "./TextEffect/SparklesPreview";
+import { Lamp } from "./StyleEffect/LampEffect";
+// import { GoogleGeminiEffectD } from "./StyleEffect/GoogleGeminiEffect";
 const Home = () => {
   const handleGoto = () => {
     console.log("Go to the next page");
@@ -30,7 +31,7 @@ const Home = () => {
       </div>
       <BentoGridSecondDemo />
       <TracingBeamDemo/>
-      <SparklesPreview/>
+      <Lamp/>
     </>
   );
 };

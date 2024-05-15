@@ -8,7 +8,7 @@ import {
 
 export function TextRevealCardPreview() {
   return (
-    <div>
+    <>
       <TextRevealCard
         text="Access the Power of Blockchain"
         revealText="Access the Power of Decentralized"
@@ -21,6 +21,6 @@ export function TextRevealCardPreview() {
           text.
         </TextRevealCardDescription>
       </TextRevealCard>
-    </div>
+    </>
   );
 }
